@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratidin Online Limited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(max-width: 768px)" href="mobile.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="mesh mesh-green"></div>
+    <div class="mesh mesh-red"></div>
+    <div class="mesh mesh-neutral"></div>
+
+    <header class="glass header">
+      <div class="logo-wrap">
+        <img class="logo-image" src="logo.png" alt="Pratidin Online Limited logo">
+      </div>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header-actions">
+        <nav class="nav">
+          <a href="#about" data-i18n="navAbout">О нас</a>
+          <a href="#services" data-i18n="navServices">Услуги</a>
+          <a href="#forms" data-i18n="navForms">Соискателям</a>
+          <a href="#contacts" data-i18n="navContacts">Контакты</a>
+        </nav>
+        <div class="lang-switcher">
+          <button type="button" class="lang-trigger glass-inner" aria-haspopup="true" aria-expanded="false"
+            aria-label="Language switcher">
+            <span class="lang-trigger-current">RU</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="lang-menu glass-inner" role="menu" aria-hidden="true">
+            <button type="button" class="lang-option active" data-lang="ru" role="menuitem">RU</button>
+            <button type="button" class="lang-option" data-lang="en" role="menuitem">EN</button>
+            <button type="button" class="lang-option" data-lang="bn" role="menuitem">BN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <section class="glass hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Ваш надежный партнер в бизнесе</p>
+          <h2 data-i18n="heroTitle">Pratidin Online Limited помогает бизнесу выходить на международные рынки уверенно и
+            системно</h2>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">Международная торговля, юридическое сопровождение, рекрутинг
+            иностранных специалистов
+            и цифровые каналы продаж в единой модели «под ключ».</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services" data-i18n="heroPrimary">Посмотреть услуги</a>
+            <a class="button button-secondary" href="#forms" data-i18n="heroSecondary">Оставить заявку</a>
+          </div>
+        </div>
+        <div class="hero-panel glass-inner">
+          <div class="metric">
+            <span data-i18n="metricGeoLabel">Глобальная география</span>
+            <strong data-i18n="metricGeoValue">Китай, Индия, Бангладеш, Таиланд, Шри-Ланка, Дубай и другие
+              рынки.</strong>
+          </div>
+          <div class="metric">
+            <span data-i18n="metricModelLabel">Комплексная модель</span>
+            <strong data-i18n="metricModelValue">Рекрутинг, ВЭД, тендеры, юридическая поддержка и e-commerce в одной
+              команде.</strong>
+          </div>
+          <div class="metric">
+            <span data-i18n="metricMissionLabel">Наша миссия</span>
+            <strong data-i18n="metricMissionValue">Минимизировать риски и упрощать сложные бизнес-процессы, выступая
+              надежным мостом между странами и
+              партнерами.</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="visual-strip">
+        <article class="glass visual-card">
+          <img src="img/image copy 16.png" alt="Международная логистика и контейнерные поставки">
+          <div class="visual-overlay">
+            <p class="eyebrow" data-i18n="visual1Eyebrow">Глобальная логистика</p>
+            <h4 data-i18n="visual1Title">Мультимодальные поставки и международные маршруты</h4>
+          </div>
+        </article>
+        <article class="glass visual-card visual-card-contain">
+          <img src="img/image copy 17.png" alt="Глобальная торговая сеть и международные перевозки">
+          <div class="visual-overlay">
+            <p class="eyebrow" data-i18n="visual2Eyebrow">Мировая сеть</p>
+            <h4 data-i18n="visual2Title">Экспорт и импорт без лишних барьеров</h4>
+          </div>
+        </article>
+        <article class="glass visual-card visual-card-contain">
+          <img src="img/image copy 18.png" alt="Деловые переговоры и международное сотрудничество">
+          <div class="visual-overlay">
+            <p class="eyebrow" data-i18n="visual3Eyebrow">Партнерство</p>
+            <h4 data-i18n="visual3Title">Структурированные переговоры и уверенные решения</h4>
+          </div>
+        </article>
+      </section>
+
+      <section class="glass about" id="about">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="aboutEyebrow">О компании</p>
+          <h3 data-i18n="aboutTitle">Pratidin Online Limited: ваш надежный партнер в международном бизнесе</h3>
+        </div>
+        <p data-i18n="aboutBody1">Pratidin Online Limited — это динамично развивающаяся компания, предоставляющая полный
+          спектр услуг для
+          выхода на международные рынки и эффективного ведения экономической деятельности. Мы объединяем экспертизу в
+          области международной торговли, юридического сопровождения и стратегического подбора персонала, предлагая
+          клиентам комплексные решения «под ключ».</p>
+        <p data-i18n="aboutBody2">Наша миссия — минимизировать риски и упростить сложные процессы ведения бизнеса,
+          выступая надёжным мостом
+          между партнёрами из разных стран. Мы сопровождаем клиентов в рекрутинге иностранных специалистов, организации
+          международных поставок, тендерной работе, юридической защите бизнеса, развитии онлайн-торговли, а также в
+          размещении и разработке цифровых продуктов и приложений.</p>
+        <div class="about-highlights">
+          <div class="about-highlight">
+            <h4 data-i18n="aboutHighlight1Title">Комплексный подход</h4>
+            <p data-i18n="aboutHighlight1Text">Вам не нужно искать отдельно логиста, юриста и кадровое агентство. Мы
+              берем на себя весь цикл задач.</p>
+          </div>
+          <div class="about-highlight">
+            <h4 data-i18n="aboutHighlight2Title">Глобальная экспертиза</h4>
+            <p data-i18n="aboutHighlight2Text">Наш опыт позволяет эффективно работать с законодательством и деловыми
+              особенностями стран Европы, Азии,
+              Ближнего Востока и Америки.</p>
+          </div>
+          <div class="about-highlight">
+            <h4 data-i18n="aboutHighlight3Title">Прозрачность</h4>
+            <p data-i18n="aboutHighlight3Text">Мы обеспечиваем полную юридическую чистоту каждой сделки и каждого
+              трудоустройства, ценя доверие
+              клиентов.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-block" id="services">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="servicesEyebrow">Основные направления деятельности</p>
+          <h3 data-i18n="servicesTitle">Услуги для бизнеса, работодателей и соискателей</h3>
+        </div>
+        <div class="services-slider-shell">
+          <div class="services-slider-hint services-slider-hint-left" aria-hidden="true">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="services-slider-hint services-slider-hint-right" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <button type="button" class="services-arrow services-arrow-left" data-services-dir="-1"
+            aria-label="Previous service">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" class="services-arrow services-arrow-right" data-services-dir="1"
+            aria-label="Next service">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div class="services-grid" id="services-grid">
+            <article class="glass service-card">
+              <div class="service-media">
+                <img src="img/image copy 7.png" alt="Иностранные специалисты на строительном объекте">
+              </div>
+              <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+              <h4 data-i18n="service1Title">Подбор иностранного персонала</h4>
+              <p data-i18n="service1Text">Поиск, верификация и юридическое сопровождение найма иностранных специалистов
+                любого уровня.</p>
+              <button class="button button-card" data-modal="recruiting" data-i18n="detailsButton">Подробнее</button>
+            </article>
+
+            <article class="glass service-card">
+              <div class="service-media">
+                <img src="img/image copy 9.png" alt="Международные поставки и погрузка товара">
+              </div>
+              <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+              <h4 data-i18n="service2Title">Международные поставки</h4>
+              <p data-i18n="service2Text">Организация прямых экспортно-импортных поставок с логистикой, контрактами и
+                таможенным сопровождением.
+              </p>
+              <button class="button button-card" data-modal="trade" data-i18n="detailsButton">Подробнее</button>
+            </article>
+
+            <article class="glass service-card">
+              <div class="service-media">
+                <img src="img/image copy 13.png" alt="Деловое партнерство и переговоры">
+              </div>
+              <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+              <h4 data-i18n="service3Title">Тендерная работа</h4>
+              <p data-i18n="service3Text">Сопровождение международных тендеров и государственных закупок на всех этапах
+                тендерного цикла.</p>
+              <button class="button button-card" data-modal="tender" data-i18n="detailsButton">Подробнее</button>
+            </article>
+
+            <article class="glass service-card">
+              <div class="service-media">
+                <img src="img/image.png" alt="Международные и государственные деловые направления">
+              </div>
+              <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+              <h4 data-i18n="service4Title">Юридические услуги</h4>
+              <p data-i18n="service4Text">Правовая поддержка ВЭД, проверка контрагентов, контракты и разрешение
+                коммерческих споров.</p>
+              <button class="button button-card" data-modal="legal" data-i18n="detailsButton">Подробнее</button>
+            </article>
+
+            <article class="glass service-card">
+              <div class="service-media">
+                <img src="img/image copy 10.png" alt="Складская логистика и обработка заказов">
+              </div>
+              <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <h4 data-i18n="service5Title">Онлайн-торговля</h4>
+              <p data-i18n="service5Text">Pratidin Online, интернет-магазины, e-commerce сопровождение, размещение и
+                разработка приложений.</p>
+              <button class="button button-card" data-modal="ecommerce" data-i18n="detailsButton">Подробнее</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass platform-feature">
+        <div class="platform-copy">
+          <p class="eyebrow" data-i18n="platformEyebrow">Цифровая платформа</p>
+          <h3 data-i18n="platformTitle">Pratidin Online: интернет-магазины, e-commerce и цифровые продукты</h3>
+          <p data-i18n="platformBody1">Компания Pratidin предоставляет услугу размещения и разработки приложений, а
+            также развивает собственный
+            цифровой сервис для онлайн-коммерции. Это направление подходит бизнесу, который хочет не только продавать
+            товары, но и запускать полноценную цифровую инфраструктуру вокруг продаж.</p>
+          <p data-i18n="platformBody2">Через платформу можно развивать интернет-магазины, усиливать электронную
+            коммерцию, тестировать новые
+            модели выхода на аудиторию и выстраивать устойчивое присутствие в цифровой среде.</p>
+          <div class="platform-actions">
+            <a class="button button-primary" href="https://pratidin.online/" target="_blank" rel="noopener noreferrer"
+              data-i18n="platformPrimary">Открыть Pratidin Online</a>
+            <a class="button button-secondary" href="#form-general" data-i18n="platformSecondary">Запросить
+              консультацию</a>
+          </div>
+        </div>
+        <div class="platform-panel">
+          <div class="platform-card glass">
+            <p class="eyebrow" data-i18n="platformCardEyebrow">Сервис и ссылка</p>
+            <h4 data-i18n="platformCardTitle">Пратидин онлайн Интернет-магазины | Пратидин онлайн Электронная коммерция
+            </h4>
+            <a class="platform-link" href="https://pratidin.online/" target="_blank"
+              rel="noopener noreferrer">https://pratidin.online/</a>
+          </div>
+          <div class="platform-points">
+            <div class="platform-point">
+              <i class="fa-solid fa-store"></i>
+              <span data-i18n="platformPoint1">Запуск и сопровождение интернет-магазинов</span>
+            </div>
+            <div class="platform-point">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span data-i18n="platformPoint2">Размещение и разработка приложений под задачи бизнеса</span>
+            </div>
+            <div class="platform-point">
+              <i class="fa-solid fa-globe"></i>
+              <span data-i18n="platformPoint3">Поддержка электронной коммерции и международного
+                digital-продвижения</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass showcase">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="showcaseEyebrow">Практика найма</p>
+          <h3 data-i18n="showcaseTitle">Отрасли, в которых мы закрываем кадровые задачи</h3>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <img src="img/image copy 3.png" alt="Производственная линия и автомобильный завод">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase1Title">Производство</h4>
+              <p data-i18n="showcase1Text">Комплектация производственных площадок и конвейерных линий.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 4.png" alt="Коммунальные службы и сезонные работы">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase2Title">Коммунальные службы</h4>
+              <p data-i18n="showcase2Text">Сезонный и постоянный персонал для городских и сервисных задач.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 5.png" alt="Гостиничный персонал">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase3Title">Гостиничный сервис</h4>
+              <p data-i18n="showcase3Text">Подбор staff для гостиниц, апарт-отелей и сервисных операторов.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 6.png" alt="Клининг и обслуживание помещений">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase4Title">Клининг и обслуживание</h4>
+              <p data-i18n="showcase4Text">Персонал для объектов недвижимости, жилых и коммерческих пространств.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 8.png" alt="Повар и кухонный персонал">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase5Title">HoReCa</h4>
+              <p data-i18n="showcase5Text">Повара, кухонный персонал и специалисты для ресторанного бизнеса.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 11.png" alt="Работники на промышленном производстве">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase6Title">Промышленный персонал</h4>
+              <p data-i18n="showcase6Text">Системный найм сотрудников для цехов, сборки и технических процессов.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 12.png" alt="Работники в сельском хозяйстве">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase7Title">Сельское хозяйство</h4>
+              <p data-i18n="showcase7Text">Рабочие команды для сезонных и постоянных аграрных проектов.</p>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <img src="img/image copy 15.png" alt="Швейное производство и текстильный цех">
+            <div class="showcase-copy">
+              <h4 data-i18n="showcase8Title">Легкая промышленность</h4>
+              <p data-i18n="showcase8Text">Подбор специалистов для швейных, текстильных и сборочных производств.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="glass extras">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="extrasEyebrow">Дополнительные услуги</p>
+          <h3 data-i18n="extrasTitle">Сопровождение деловых и экскурсионных поездок по России</h3>
+        </div>
+        <div class="travel-gallery">
+          <figure class="travel-card travel-card-left">
+            <img src="img/image copy.png" alt="Дворцовая площадь и Зимний дворец в Санкт-Петербурге">
+          </figure>
+          <figure class="travel-card travel-card-center">
+            <img src="img/image copy 2.png" alt="Красная площадь и Кремль зимой в Москве">
+          </figure>
+        </div>
+        <div class="extras-grid">
+          <div class="extra-item">
+            <i class="fa-solid fa-plane-departure"></i>
+            <span data-i18n="extra1">Покупка авиабилетов и организация трансфера</span>
+          </div>
+          <div class="extra-item">
+            <i class="fa-solid fa-hotel"></i>
+            <span data-i18n="extra2">Бронирование гостиниц и помощь с арендой квартиры</span>
+          </div>
+          <div class="extra-item">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span data-i18n="extra3">Индивидуальные экскурсии по Москве и Санкт-Петербургу для групп и частных
+              клиентов</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="widgets-row">
+        <article class="glass widget" id="widget-advantage">
+          <div class="widget-head">
+            <p class="eyebrow" data-i18n="widgetAdvEyebrow">Аналитика 2026-2027</p>
+            <h3 data-i18n="widgetAdvTitle">Почему выгодно нанять иностранного сотрудника в 2026-2027 гг.</h3>
+          </div>
+          <p class="widget-lead" data-i18n="widgetAdvLead">Государство делает модель найма более прозрачной, а бизнес
+            получает доступ к легальным
+            и масштабируемым кадровым решениям.</p>
+          <div class="widget-content">
+            <div class="widget-badge">1 / 6</div>
+            <h4 id="advantage-title">Гарантированная легальность через реестровую модель</h4>
+            <p id="advantage-text">С 2027 года организованный набор и предварительная проверка работников снижают
+              юридические риски и вероятность штрафов.</p>
+          </div>
+          <div class="widget-actions">
+            <button class="button button-secondary widget-prev" data-widget="advantage"
+              data-i18n="widgetPrev">Назад</button>
+            <button class="button button-primary widget-next" data-widget="advantage" data-i18n="widgetNext">Следующий
+              тезис</button>
+          </div>
+        </article>
+
+        <article class="glass widget" id="widget-savings">
+          <div class="widget-head">
+            <p class="eyebrow" data-i18n="widgetSavEyebrow">Финансовая выгода</p>
+            <h3 data-i18n="widgetSavTitle">Как сэкономить на зарплате сотрудников 20-30%?</h3>
+          </div>
+          <p class="widget-lead" data-i18n="widgetSavLead">Экономия складывается из снижения прямых расходов, налоговой
+            оптимизации, льготных
+            тарифов и уменьшения скрытых рисков.</p>
+          <div class="widget-content">
+            <div class="widget-badge">1 / 5</div>
+            <h4 id="savings-title">Снижение прямых расходов на зарплату</h4>
+            <p id="savings-text">Сотрудники из стран Азии часто готовы работать за более предсказуемый бюджет, что
+              особенно важно для строительства, логистики и сельского хозяйства.</p>
+          </div>
+          <div class="widget-actions">
+            <button class="button button-secondary widget-prev" data-widget="savings"
+              data-i18n="widgetPrev">Назад</button>
+            <button class="button button-primary widget-next" data-widget="savings" data-i18n="widgetNext">Следующий
+              тезис</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="forms-section" id="forms">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="formsEyebrow">Свяжитесь с нами</p>
+          <h3 data-i18n="formsTitle">Обсудим, как вывести ваш бизнес на новые горизонты</h3>
+        </div>
+        <div class="forms-grid">
+          <form class="glass info-form" id="form-employers" method="post" action="submit.php"
+            data-form-type="employers" accept-charset="UTF-8">
+            <h4 data-i18n="formEmployersTitle">Для работодателей</h4>
+            <label>
+              <span data-i18n="formEmployersCompanyLabel">Компания</span>
+              <input type="text" name="company" placeholder="Название компании"
+                data-i18n-placeholder="formEmployersCompanyPlaceholder" required>
+            </label>
+            <label>
+              <span data-i18n="formEmployersContactLabel">Контактное лицо</span>
+              <input type="text" name="contact" placeholder="Имя и должность"
+                data-i18n-placeholder="formEmployersContactPlaceholder" required>
+            </label>
+            <label>
+              <span data-i18n="formEmployersRequestLabel">Запрос</span>
+              <textarea name="request" rows="5"
+                placeholder="Опишите задачу: подбор персонала, ВЭД, тендеры или юридическое сопровождение"
+                data-i18n-placeholder="formEmployersRequestPlaceholder" required></textarea>
+            </label>
+            <div class="form-feedback" aria-live="polite"></div>
+            <button type="submit" class="button button-primary" data-i18n="formEmployersButton">Отправить
+              запрос</button>
+          </form>
+
+          <form class="glass info-form" id="form-candidates" method="post" action="submit.php"
+            data-form-type="candidates" accept-charset="UTF-8">
+            <h4 data-i18n="formCandidatesTitle">Для соискателей</h4>
+            <label>
+              <span data-i18n="formCandidatesNameLabel">Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя"
+                data-i18n-placeholder="formCandidatesNamePlaceholder" required>
+            </label>
+            <label>
+              <span data-i18n="formCandidatesSpecializationLabel">Специализация</span>
+              <input type="text" name="specialization" placeholder="Профессия или желаемое направление"
+                data-i18n-placeholder="formCandidatesSpecializationPlaceholder" required>
+            </label>
+            <label>
+              <span data-i18n="formCandidatesMessageLabel">Сообщение</span>
+              <textarea name="message" rows="5"
+                placeholder="Опишите ваш опыт, страну выезда и интерес к трудоустройству"
+                data-i18n-placeholder="formCandidatesMessagePlaceholder" required></textarea>
+            </label>
+            <div class="form-feedback" aria-live="polite"></div>
+            <button type="submit" class="button button-primary" data-i18n="formCandidatesButton">Отправить
+              анкету</button>
+          </form>
+
+          <form class="glass info-form" id="form-general" method="post" action="submit.php" data-form-type="general"
+            accept-charset="UTF-8">
+            <h4 data-i18n="formGeneralTitle">Общие вопросы</h4>
+            <label>
+              <span data-i18n="formGeneralNameLabel">Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" data-i18n-placeholder="formGeneralNamePlaceholder"
+                required>
+            </label>
+            <label>
+              <span data-i18n="formGeneralEmailLabel">Email</span>
+              <input type="email" name="email" placeholder="example@domain.com"
+                data-i18n-placeholder="formGeneralEmailPlaceholder" required>
+            </label>
+            <label>
+              <span data-i18n="formGeneralQuestionLabel">Вопрос</span>
+              <textarea name="question" rows="5"
+                placeholder="Напишите ваш вопрос по сотрудничеству, поставкам или сопровождению"
+                data-i18n-placeholder="formGeneralQuestionPlaceholder" required></textarea>
+            </label>
+            <div class="form-feedback" aria-live="polite"></div>
+            <button type="submit" class="button button-primary" data-i18n="formGeneralButton">Связаться с нами</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="glass footer" id="contacts">
+      <div class="footer-top">
+        <div class="footer-intro">
+          <p class="eyebrow" data-i18n="footerEyebrow">Контакты</p>
+          <h3 data-i18n="footerTitle">Свяжитесь с Pratidin Online Limited удобным для вас способом</h3>
+          <p data-i18n="footerIntro">Мы открыты для работодателей, партнёров и клиентов из России и зарубежных стран.
+            Ниже собраны прямые
+            контакты представителей компании, адрес офиса в Бангладеш и рабочий e-mail для деловой переписки.</p>
+        </div>
+        <div class="footer-cta">
+          <a class="button button-primary" href="mailto:pratidin.online.limited@gmail.com"
+            data-i18n="footerPrimary">Написать на e-mail</a>
+          <a class="button button-secondary" href="tel:+79917074907" data-i18n="footerSecondary">Позвонить в РФ</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-card footer-card-accent">
+          <div class="footer-card-icon"><i class="fa-solid fa-earth-asia"></i></div>
+          <h4 data-i18n="contact1Title">Представитель зарубежных стран</h4>
+          <a class="contact-link" href="tel:+8801754408708">+8801754408708</a>
+          <p data-i18n="contact1Text">Прямой контакт для международных обращений и коммуникации с зарубежными
+            партнёрами.</p>
+        </div>
+
+        <div class="footer-card">
+          <div class="footer-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <h4 data-i18n="contact2Title">Представитель в РФ</h4>
+          <div class="contact-combo">
+            <a class="contact-link contact-link-inline" href="tel:+79917074907"
+              aria-label="Позвонить по номеру +7 991 707 49 07">
+              <i class="fa-solid fa-phone"></i>
+              <span>+7 991 707 49 07</span>
+            </a>
+            <span class="contact-separator" aria-hidden="true">|</span>
+            <a class="contact-link contact-link-inline contact-link-max" href="https://max.ru/" target="_blank"
+              rel="noopener noreferrer" data-i18n-title="contact2MaxHint" title="Написать нам в MAX"
+              aria-label="Написать нам в MAX">
+              <i class="fa-solid fa-comments"></i>
+              <span data-i18n="contact2MaxLabel">MAX Messenger</span>
+            </a>
+          </div>
+          <p data-i18n="contact2Text">Подходит для обращений по сопровождению проектов, деловым поездкам и консультациям
+            в России.</p>
+        </div>
+
+        <div class="footer-card footer-card-wide">
+          <div class="footer-card-icon"><i class="fa-solid fa-building"></i></div>
+          <h4 data-i18n="contact3Title">Офис компании в Бангладеш</h4>
+          <p>
+            <a class="contact-link"
+              href="https://www.google.com/maps/dir/?api=1&destination=46-48%20Dr%20Kudrat%20E%20Khoda%20Road%2C%20Shuvastu%20Arcade%2C%20ICT%20Bhaban%2C%20Level%208%2C%20Office%20850%2C%20Dhaka%2C%20Bangladesh"
+              target="_blank" rel="noopener noreferrer"
+              aria-label="Открыть маршрут до офиса компании в Бангладеш на карте">
+              46-48 Dr Kudrat E Khoda Road, Shuvastu Arcade, ICT Bhaban, Level # 8, Office # 850, Dhaka,
+              Bangladesh
+            </a>
+          </p>
+          <div class="contact-chip-row">
+            <span class="contact-chip">Dhaka</span>
+            <span class="contact-chip">Bangladesh</span>
+            <span class="contact-chip">Office # 850</span>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <div class="footer-card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+          <h4 data-i18n="contact4Title">E-mail</h4>
+          <a class="contact-link contact-link-mail"
+            href="mailto:pratidin.online.limited@gmail.com">pratidin.online.limited@gmail.com</a>
+          <p data-i18n="contact4Text">Используйте этот адрес для запросов о сотрудничестве, коммерческих предложений и
+            общей деловой связи.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footerBottomLead">Pratidin Online Limited — это уверенность в завтрашнем дне вашего бизнеса на
+          мировой арене.</p>
+        <p data-i18n="footerBottomCopy">&copy; 2026 Pratidin Online Limited. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="glass modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-body">
+      <button class="modal-close" id="modal-close" aria-label="Закрыть окно">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <p class="eyebrow" id="modal-eyebrow">Услуга</p>
+      <h3 id="modal-title">Описание услуги</h3>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
